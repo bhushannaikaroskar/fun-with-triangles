@@ -13,10 +13,14 @@ function isTriangle(){
     const angle2 = Number(inputs[1].value);
     const angle3 = Number(inputs[2].value);
     const sum = calculateSumOfAngles(angle1,angle2,angle3);
-    if(sum === 180){
-        outputElement.innerText = "Yay its an Triangle"
+    if(angle1<=0 || angle2 <= 0 || angle3 <= 0){
+        outputElement.innerText = "Angle should be greater than 0";
     }else{
-        outputElement.innerText = "Oh no its not a Triangle"
+        if(sum === 180){
+            outputElement.innerText = "Yay its an Triangle"
+        }else{
+            outputElement.innerText = "Oh no its not a Triangle"
+        }
     }
 }
 

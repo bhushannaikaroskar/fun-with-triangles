@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hypotenuse</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html">IsTriangle?</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li><a href="hypotenuse.html">Hypotenuse</a></li>
-            <li><a href="area.html">Area</a></li>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">IsTriangle?</a></li  class="nav-item">
+            <li class="nav-item"><a href="quiz.html">Quiz</a></li  class="nav-item">
+            <li class="nav-item active"><a href="hypotenuse.html">Hypotenuse</a></li  class="nav-item">
+            <li class="nav-item"><a href="area.html">Area</a></li  class="nav-item">
         </ul>
     </nav>
-    <h1>Check Hypotenuse</h1>
-    <h2>Length of the hypotenuse c = sqrt(a² + b²)</h2>
-    <label for="side1">A=</label>
-    <input type="text" id="side1" class="side-input">
-    <label for="side2">B=</label>
-    <input type="text" id="side2" class="side-input">
+    <div class="container">
+        <h1>Check Hypotenuse</h1>
+        <h2 class="formula">Length of the hypotenuse c = sqrt(a² + b²)</h2>
 
-    <button id="hypotenuse-button">Calculate Hypotenuse</button>
-    <div id="output"></div>
+        <label for="side1" class="label-field">Side A :</label><input type="text" id="side1" class="side-input" />
+        <label for="side2" class="label-field">Side B :</label><input type="text" id="side2" class="side-input" />
+
+        <button id="hypotenuse-button" class="button-primary">Calculate Hypotenuse</button>
+        <div id="output"></div>
+    </div>
     <script src="hypotenuse-app.js"></script>
 </body>
 </html>

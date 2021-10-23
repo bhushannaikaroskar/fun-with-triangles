@@ -5,25 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html">IsTriangle?</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li><a href="hypotenuse.html">Hypotenuse</a></li>
-            <li><a href="area.html">Area</a></li>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">IsTriangle?</a></li>
+            <li class="nav-item"><a href="quiz.html">Quiz</a></li>
+            <li class="nav-item"><a href="hypotenuse.html">Hypotenuse</a></li>
+            <li class="nav-item active"><a href="area.html">Area</a></li>
         </ul>
     </nav>
-    <h1>Check Area of a Triangle</h1>
-    <h2>Area of Triangle A = 1/2 (base * height)</h2>
-    <label for="height">Height:</label>
-    <input type="text" id="height" class="input-field">
-    <label for="base">Base:</label>
-    <input type="text" id="base" class="input-field">
-
-    <button id="area-button">Calculate Area</button>
-    <div id="output"></div>
+    <div class="container">
+        <h1>Check Area of a Triangle</h1>
+        <h2 class="formula">Area of Triangle A = 1/2 (base * height)</h2>
+        <label for="height" class="label-field">Height:</label><input type="text" id="height" class="input-field">
+        <label for="base" class="label-field">Base:</label><input type="text" id="base" class="input-field">
+    
+        <button id="area-button" class="button-primary">Calculate Area</button>
+        <div id="output"></div></div>
     <script src="area-app.js"></script>
 </body>
 </html>
